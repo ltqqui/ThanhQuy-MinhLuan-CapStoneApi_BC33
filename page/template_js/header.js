@@ -9,7 +9,7 @@ function createHeader() {
         <div class="login-register">
             <i class="fa-solid fa-cart-shopping">(1)</i>
             <a href="#">Login</a>
-            <a href="https://thanh-quy-minh-luan-cap-stone-api-bc-33.vercel.app/page/detail.html">Register</a>
+            <a href="https://thanh-quy-minh-luan-cap-stone-api-bc-33.vercel.app/page/register.html">Register</a>
         </div>
         </div>
         <div class="header-bottom">
