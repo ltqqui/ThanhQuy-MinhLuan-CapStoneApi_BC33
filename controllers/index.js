@@ -31,7 +31,7 @@ function renderProduct(arrProduct) {
         <h3>${pr.name}</h3>
         <p>${pr.description}</p>
         <div class="btn" >
-        <a href="../page/detail.html?Productid=${pr.id}">Buy now</a>
+        <a href="./page/detail.html?Productid=${pr.id}">Buy now</a>
 
         <span>${pr.price}$</span>
         </div>
