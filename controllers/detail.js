@@ -13,10 +13,28 @@ window.onload = function () {
     promise.then(function (result) {
       console.log(result.data);
       renderProductDetail(result.data.content);
+      renderRelatedProducts(result.data.content.relatedProducts);
     });
     promise.catch(function (err) {
       console.log("err");
     });
+
+    // function getProduct() {
+    //   let promise = axios({
+    //     url: "https://shop.cyberlearn.vn/api/Product",
+    //     method: "GET",
+    //     responseType: "json",
+    //   });
+    //   promise.then(function (result) {
+    //     console.log(result.data);
+    //     renderRelatedProducts(result.data.content);
+    //   });
+    //   promise.catch(function (err) {
+    //     console.log("err");
+    //   });
+    // }
+    // getProduct();
+
   }
 
 
@@ -61,4 +79,29 @@ function renderProductDetail(arrProduct) {
   </div>
             `;
   document.querySelector("#renderDetail").innerHTML = html;
+}
+
+function renderRelatedProducts(relateProduct) {
+  var html = "";
+  for (var i = 0; i < relateProduct.length; i++) {
+    var pr = relateProduct[i];
+    html += `
+    
+    <div class="col">
+            <div class="item">
+                <div class="thumbnail">
+          <img src="${pr.image}" alt="">
+        <h3>${pr.name}</h3>
+        <p>${pr.description}</p>
+        <div class="btn" >
+        <a href="../page/detail.html?Productid=${pr.id}">Buy now</a>
+
+        <span>${pr.price}$</span>
+        </div>
+                </div>
+            </div>
+           </div>
+        `;
+  }
+  document.querySelector("#render").innerHTML = html;
 }
