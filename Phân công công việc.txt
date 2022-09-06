@@ -1,0 +1,12 @@
+
+-----------------Thành viên-----------
+    Lâm Thanh Quí: link fb:https://www.facebook.com/profile.php?id=100018338412780
+     
++Giao diện: index(carousel,product-feature ), register
++Js:index(product-feature call API), register(call API), models
++Quay youtube , khởi tạo dự án github 
+
+    Chung Minh Luân: link fb: https://www.facebook.com/thanhthien.thattha
++template header , footer(scss,js) 3 page
++ detail(detail call API, product-feature call API) 
++Deploy 
