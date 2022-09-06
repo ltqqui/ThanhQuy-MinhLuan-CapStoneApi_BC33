@@ -3,7 +3,7 @@ document.querySelector('#submit').onclick=function(){
     user.email=document.querySelector('#email').value;
     user.password=document.querySelector('#password').value;
     user.name=document.querySelector('#name').value;
-    user.gender=document.querySelector('#gender').value;
+    user.gender=document.querySelector('#genderCheck').checked;
     user.phone=document.querySelector('#phone').value;
     let promise= axios({
         url:'https://shop.cyberlearn.vn/api/Users/signup',
